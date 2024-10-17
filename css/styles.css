@@ -268,7 +268,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: 
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.modal-icon {fill: #2e2f42; 
+.modal-icon-close {fill: #2e2f42; 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;}
 .modal-close-btn:hover, .modal-close-btn:focus { background-color: #404BBF; border: none;}
 .modal-close-btn:hover .modal-icon, .modal-close-btn:focus .modal-icon {fill: #FFFFFF;}
@@ -287,6 +287,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
      }
 .modal-field {margin-bottom: 8px;}
 .modal-label {display: block;
+    flex-direction: column;
     margin-bottom: 4px;
     font-weight: 400;fill
     font-size: 12px;
@@ -295,10 +296,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     color: #8e8f99;}
 
 .modal-input-wrap {position: relative; }
-.modal-icon {position: absolute; top: 50%; left: 16px; top: 11px;  translateY(-50%); 
+.modal-icon-inf {position: absolute; top: 50%; left: 16px; top: 11px;  translateY(-50%); 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); }
-.modal-label {display: flex; flex-direction: column;}
+
 .modal-input { width: 100%; width: 360px;
+    padding-left: 38px;
+    outline: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 40px;
@@ -307,8 +310,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .modal-input:focus, .modal-input:hover {border-color: #4D5AE5;}
 .modal-input:focus+svg, .modal-input:hover+svg {fill: #4D5AE5;}
 .modal-comment {margin-bottom: 16px;}
-.user-comment { width: 100%;border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
+.user-comment { width: 10;
+    padding: 8px 16px;
+    outline: transparent;
     width: 360px;
     height: 120px; font-weight: 400;
     font-size: 12px;
@@ -327,7 +331,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     cursor: pointer;
 }
 .label-checkbox {font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;}
 .acceptbox { margin-right: 8px;
